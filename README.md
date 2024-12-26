@@ -27,10 +27,10 @@ You Solution Template is Ready!
 
 1. Clone this Repository and Extract it to a Folder.
 3. Change the Connection Strings for the "DefaultConnection" and "IdentityConnection" in the appsettings.json
-2. Run the following commands on Powershell in the Projecct's Directory.
+2. Run the following commands on Powershell in the Project's Directory.
 - dotnet restore
-- dotnet ef database update -Context IdentityContext
-- dotnet ef database update -Context ApplicationDbContext
+- dotnet ef database update --context IdentityContext [You need to run this command from src\Libraries\Identity]
+- dotnet ef database update --context ApplicationDbContext [You need to run this command from src\Libraries\Data]
 - dotnet run (OR) Run the Solution using Visual Studio
 
 ### Swagger
